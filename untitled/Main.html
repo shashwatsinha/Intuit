@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>List of Companies</h2>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Companies
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu" id = "dropdownlist">
+            <li><a href="#">FB</a></li>
+            <li><a href="#">ABBV</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+        <span class="label label-default">Company Name Selected</span>
+        <button type="button" class="btn btn-primary">Train</button>
+    </div>
+
+    <div class="col-xs-3">
+        <label for="ex1">Open</label>
+        <input class="form-control" id="ex1" type="text">
+    </div>
+    <div class="col-xs-3">
+        <label for="ex2">High</label>
+        <input class="form-control" id="ex2" type="text">
+    </div>
+    <div class="col-xs-3">
+        <label for="ex3">Low</label>
+        <input class="form-control" id="ex3" type="text">
+    </div>
+    </div>
+    <h1>Close for the day predicted: <span class="label label-default">132</span></h1>
+
+
+</div>
+
+<script> function myFunction(a,b) {
+    alert("hello1");
+    return a*b;
+}</script>
+
+<script>
+    getText = function(url, callback)
+    {
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function()
+        {
+            if (request.readyState == 4 && request.status == 200)
+            {
+                callback(request.responseText); // Another callback here
+            }
+        };
+        request.open('GET', url);
+        request.send();
+    }
+
+    function mycallback(data) {
+
+        var k = data.toString();
+        var temp = JSON.parse(k);
+        var fv = processML(temp);
+        //alert(temp);
+        //alert(data.toString());
+    }
+
+    getText('https://www.quandl.com/api/v3/datasets/WIKI/FB.json?api_key=_ky5GP6zccsBiAUA-TqT', mycallback); //passing mycallback as a method
+
+
+
+</script>
+
+<script type="text/javascript" src = ".idea/TestML.js"></script>
+
+<p id = "demo">
+    <h1>123
+    </h1>
+</p>
+
+
+<script>
+
+</script>
+</body>
+</html>
