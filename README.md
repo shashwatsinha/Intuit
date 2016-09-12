@@ -36,21 +36,21 @@ API's Used:
 
 Installation Instructions:
 
+Linux:
+
 The application works on NodeJS & NPM package manager. I have used the IDE Webstorm for this project, although that is not required for the application to run.
 1. Get NodeJS and install in your system. Follow the instructions from http://nodejs.org/ according to your OS and build it.
-
-2. Using the NPM package manager (comes preinstalled with Node JS), download the following packages:
+2. Install the library FANN using instructions here https://github.com/libfann/fann
+3. Install FANN, you will need to install glib2 and pkg-config before that.
+4. Using the NPM package manager (comes preinstalled with Node JS), download the following packages:
 	FANN
 	Request
 	Stdio
 	Plotly
 	
-3. After installing the above packages using NPM manager, run the above script. When running, first the app asks for which company the user wants to check features for.
+5. After installing the above packages using NPM manager, run the above script. When running, first the app asks for which company the user wants to check features for.
 
-Then the user has 3 options to select from, depending which feature he wants to see. 
-For feature 1 the predicted price of FB is shown after given inputs of 128,129,130:
-For feature 2, a link is given as the output,Clicking on the link gives us the output:
-For Feature 3, the current price in real time
+
 
 
 
