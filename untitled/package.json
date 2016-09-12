@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./TestML/TestML.js"
   },
   "dependencies": {
     "babar": "0.0.3",
