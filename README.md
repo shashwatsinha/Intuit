@@ -41,12 +41,13 @@ Linux:
 The application works on NodeJS & NPM package manager. I have used the IDE Webstorm for this project, although that is not required for the application to run.
 1. Get NodeJS and install in your system. Follow the instructions from http://nodejs.org/ according to your OS and build it.
 2. Install the library FANN using instructions here https://github.com/libfann/fann
-3. Install FANN, you will need to install glib2 and pkg-config before that.
+3. Install FANN for npm, you will need to install glib2 and pkg-config before that. (Instructions : https://www.npmjs.com/package/fann)
 4. Using the NPM package manager (comes preinstalled with Node JS), download the following packages:
 	FANN
 	Request
 	Stdio
 	Plotly
+	Gulp
 	
 5. After installing the above packages using NPM manager, run the above script. When running, first the app asks for which company the user wants to check features for.
 
