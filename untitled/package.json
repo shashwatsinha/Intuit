@@ -22,7 +22,7 @@
     "r3-charts": "0.0.4",
     "say": "^0.9.1",
     "semantic-ui": "^2.2.4",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
 	"request": "2.74.0",
 	"stdio": "0.2.7"
   }
